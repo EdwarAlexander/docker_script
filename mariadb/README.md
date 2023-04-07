@@ -48,3 +48,7 @@ docker volume inspect name-volumen
 * Linea abreviada
 
 docker run -e MARIADB_ROOT_PASSWORD=root-password -e MARIADB_DATABASE=world-db --name world-db --volume name-volumen:/var/lib/mysql -dp 3306:3306 mariadb
+
+## Creación de contenedor con network
+
+docker run -e MARIADB_ROOT_PASSWORD=root-password -e MARIADB_DATABASE=world-db --name world-db --volume name-volumen:/var/lib/mysql --network name-network -dp 3306:3306 mariadb
