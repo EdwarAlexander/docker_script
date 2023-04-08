@@ -33,18 +33,6 @@ docker run -e MARIADB_ROOT_PASSWORD=root-password -e MARIADB_DATABASE=world-db -
 
 ## Creación de contenedor con volumenes
 
-* Creación de volumenes
-
-docker volume create name-volumen
-
-* Visualizar volumenes
-
-docker volume ls
-
-* Visualizar configuración del volumen
-
-docker volume inspect name-volumen
-
 * Linea abreviada
 
 docker run -e MARIADB_ROOT_PASSWORD=root-password -e MARIADB_DATABASE=world-db --name world-db --volume name-volumen:/var/lib/mysql -dp 3306:3306 mariadb
