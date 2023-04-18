@@ -7,3 +7,7 @@ docker-compose up
 * finalizar archivos yml
 
 docker-compose down
+
+* finalizar docker compose eliminando volumenes
+
+docker-compose down --volumes
